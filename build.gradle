@@ -40,8 +40,12 @@ apply plugin: "idea"
 apply plugin: "com.google.cloud.tools.jib"
 
 dependencies {
-    compile "org.apereo.cas:cas-server-webapp${project.appServer}:${casServerVersion}"
+    // compile "org.apereo.cas:cas-server-webapp${project.appServer}:${casServerVersion}"
     // Other CAS dependencies/modules may be listed here...
+    compile "org.apereo.cas:cas-server-webapp-tomcat:${project.'cas.version'}"
+    compile "org.apereo.cas:cas-server-support-json-service-registry:${casServerVersion}"
+    compile "org.apereo.cas:cas-server-support-jpa-ticket-registry:${project.'cas.version'}"
+    // compile "org.apereo.cas:cas-server-support-syncope-authentication:${project.'cas.version'}"
 }
 
 tasks.findByName("jibDockerBuild")
