@@ -45,7 +45,7 @@ dependencies {
     compile "org.apereo.cas:cas-server-webapp-tomcat:${project.'cas.version'}"
     compile "org.apereo.cas:cas-server-support-json-service-registry:${casServerVersion}"
     compile "org.apereo.cas:cas-server-support-jpa-ticket-registry:${project.'cas.version'}"
-    // compile "org.apereo.cas:cas-server-support-syncope-authentication:${project.'cas.version'}"
+    compile "org.apereo.cas:cas-server-support-syncope-authentication:${project.'cas.version'}"
 }
 
 tasks.findByName("jibDockerBuild")

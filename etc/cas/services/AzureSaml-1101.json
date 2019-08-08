@@ -1,7 +1,7 @@
 {
     "@class" : "org.apereo.cas.services.RegexRegisteredService",
-    "serviceId" : "JsonSrvReg",
+    "serviceId" : "https://localhost:8080/cas",
     "name" : "JsonSrvReg",
-    "id" : 1001,
-    "evaluationOrder" : 10
+    "id" : 1101,
+    "evaluationOrder" : 20
 }
